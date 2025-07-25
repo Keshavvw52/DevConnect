@@ -2,6 +2,10 @@
 
 DevConnect is a full-stack social media application built with **React**, **Firebase**, and **Cloudinary**. It's designed for developers to connect, share posts, follow others, and interact through comments and likes.
 
+## 🌍 Live Demo
+
+👉 [Visit DevConnect on Netlify](https://fascinating-bublanina-9ec013.netlify.app)
+
 ## 🔥 Features
 
 - 🔐 Firebase Authentication (Signup/Login)
