@@ -4,7 +4,8 @@ DevConnect is a full-stack social media application built with **React**, **Fire
 
 ## 🌍 Live Demo
 
-👉 [Visit DevConnect on Netlify](https://fascinating-bublanina-9ec013.netlify.app)
+👉 Visit DevConnect on Netlify
+https://fascinating-bublanina-9ec013.netlify.app
 
 ## 🔥 Features
 
