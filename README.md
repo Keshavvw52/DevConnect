@@ -1,42 +1,37 @@
-<h1 align="center">DevConnect 🚀</h1>
+# DevConnect 👨‍💻🧑‍💻
 
-<p align="center">
-  A full-stack social media app for developers, built with <strong>React</strong>, <strong>Firebase</strong>, and <strong>Cloudinary</strong>.
-</p>
+DevConnect is a full-stack social media application built with **React**, **Firebase**, and **Cloudinary**. It's designed for developers to connect, share posts, follow others, and interact through comments and likes.
 
-<p align="center">
-  <img src="https://img.shields.io/github/license/Keshavvw52/DevConnect" />
-  <img src="https://img.shields.io/badge/PRs-Welcome-blue" />
-  <img src="https://img.shields.io/badge/Made%20with-React-61DAFB?logo=react" />
-</p>
+## 🔥 Features
 
----
-
-## 📸 Features
-
-- 🔐 Firebase Authentication (Sign up / Login)
-- 🙍‍♂️ Profile setup with Cloudinary image upload
-- 📝 Create and edit posts with captions and images
-- ❤️ Like posts and 💬 comment in real time
-- 🔍 Explore and search users
-- ➕ Follow / Unfollow users
+- 🔐 Firebase Authentication (Signup/Login)
+- 👤 Create and update user profile with Cloudinary image upload
+- 🧵 Create, edit, and delete posts
+- ❤️ Like and 💬 comment on posts
+- 🔍 Explore page with search functionality
+- 👀 Public profile view with follow/unfollow
 - 🌗 Dark mode support
 - 📱 Fully responsive and mobile-friendly
 
----
+## 🛠 Tech Stack
 
-## 🛠️ Tech Stack
+- **Frontend**: React, React Router, Context API
+- **Backend**: Firebase (Auth, Firestore)
+- **Image Storage**: Cloudinary
+- **Deployment**: Netlify
 
-- **Frontend**: React.js, Tailwind CSS
-- **Backend**: Firebase (Firestore + Auth)
-- **Image Hosting**: Cloudinary
-- **Icons**: React Icons
+## 🚀 Getting Started
 
----
+### Prerequisites
 
-## ⚙️ Getting Started
+- Node.js and npm
+- Firebase account with project set up
+- Cloudinary account (for image uploads)
 
-1. **Clone the repo**  
-   ```bash
-   git clone https://github.com/Keshavvw52/DevConnect.git
-   cd DevConnect
+### Clone the Repo
+
+```bash
+git clone https://github.com/Keshavvw52/DevConnect.git
+cd DevConnect
+npm install
+npm start
