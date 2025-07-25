@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import Signup from "./pages/Signup";
+import Login from "./pages/Login";
+import ProfileForm from "./pages/ProfileForm";
+import Dashboard from "./pages/Dashboard";
+import UserProfile from "./pages/UserProfile";
+import Explore from "./pages/Explore";
+import PublicProfile from "./pages/PublicProfile";
+import { useAuth } from "./context/AuthContext";
 
 function App() {
+  const { currentUser } = useAuth();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="min-h-screen bg-gray-50 text-gray-900">
+        <Routes>
+          <Route path="/" element={<Navigate to={currentUser ? "/dashboard" : "/login"} />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/profile" element={<ProfileForm />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/user/:username" element={<UserProfile />} />
+          <Route path="/explore" element={<Explore />} />
+          <Route path="/profile/:username" element={<PublicProfile />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
